@@ -20,7 +20,8 @@ library(tidyverse)
 ```
 
 ```{r p1_dataframe}
-hw_df = tibble(
+set.seed(1)
+p1_df = tibble(
   vec_numeric = runif(10, min = 0, max = 5),
   vec_logical = c(vec_numeric > 2),
   vec_char = c("zhao", "qian", "sun", "li", "zhou", "wu", "zheng", "wang", "feng", "chen"),
@@ -28,4 +29,12 @@ hw_df = tibble(
 )
 ```
 
+## take the mean of each variable in the dataframe
+
+```{r mean_of_each_variable}
+mean(p1_df$vec_numeric)
+mean(p1_df$vec_logical)
+mean(p1_df$vec_char)
+mean(p1_df$vec_factor)
+```
 
