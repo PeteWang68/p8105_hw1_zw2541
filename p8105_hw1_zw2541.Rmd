@@ -5,3 +5,12 @@ date: "9/15/2018"
 output: github_document
 ---
 
+# Problem 1
+
+## 1. Create a data frame
+This data frame comprised of:
+
+*  A random sample of size 10 from a uniform[0, 5] distribution
+*  A logical vector indicating whether elements of the sample are greater than 2
+*  A (length-10) character vector
+*  A (length-10) factor vector
