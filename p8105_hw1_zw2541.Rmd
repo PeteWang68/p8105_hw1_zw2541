@@ -44,7 +44,7 @@ Explanation: Since the numeric variable is a set of numbers, it is quite easy to
 ##convert variables from one type to another
 
 The code chunk showed below will convert logical, character, and factor variables to numeric variable:
-```{r convert_variables_type}
+```{r convert_variables_type, warning = FALSE, results = FALSE}
 as.numeric(p1_df$vec_logical)
 as.numeric(p1_df$vec_char)
 as.numeric(p1_df$vec_factor)
