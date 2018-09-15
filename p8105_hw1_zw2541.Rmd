@@ -7,10 +7,25 @@ output: github_document
 
 # Problem 1
 
-## 1. Create a data frame
+## Create a data frame
 This data frame comprised of:
 
 *  A random sample of size 10 from a uniform[0, 5] distribution
 *  A logical vector indicating whether elements of the sample are greater than 2
 *  A (length-10) character vector
 *  A (length-10) factor vector
+
+```{r, message = FALSE, warning = FALSE}
+library(tidyverse)
+```
+
+```{r p1_dataframe}
+hw_df = tibble(
+  vec_numeric = runif(10, min = 0, max = 5),
+  vec_logical = c(vec_numeric > 2),
+  vec_char = c("zhao", "qian", "sun", "li", "zhou", "wu", "zheng", "wang", "feng", "chen"),
+  vec_factor = factor(c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j"))
+)
+```
+
+
