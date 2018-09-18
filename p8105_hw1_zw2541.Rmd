@@ -15,7 +15,7 @@ This data frame comprised of:
 *  A (length-10) character vector
 *  A (length-10) factor vector
 
-```{r, message = FALSE, warning = FALSE}
+```{r, message = FALSE}
 library(tidyverse)
 ```
 
