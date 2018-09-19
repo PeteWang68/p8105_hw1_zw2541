@@ -99,13 +99,13 @@ ggsave("scatterplot_with_color_points_of_logical_variable.png")
 From the scatterplot above, we could find that nearly 50% of the logical variables are true and 50% are false.
 
 scatterplot of y vs x with the color points using the numeric variable
-```{r}
+```{r Scatterplot_numeric}
 ggplot(p2_df, aes(x = x, y = y, color = p2_df$vec_numeric)) + geom_point()
 ```
 From the scatterplot above, we could find that nearly 50% of the numeric variables equal 1 and 50% equal 0.
 
 scatterplot of y vs x with the color points using the factor variable
-```{r}
+```{r Scatterplot_factor}
 ggplot(p2_df, aes(x = x, y = y, color = p2_df$vec_factor)) + geom_point()
 ```
 From the scatterplot above, we could find that nearly 50% of the factor variables are ture and 50% are false.
