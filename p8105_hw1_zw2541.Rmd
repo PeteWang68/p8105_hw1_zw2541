@@ -15,7 +15,8 @@ This data frame comprised of:
 *  A (length-10) character vector
 *  A (length-10) factor vector
 
-```{r, message = FALSE}
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
